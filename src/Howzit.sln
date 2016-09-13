@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Howzit.Domains", "Howzit.Domains\Howzit.Domains.csproj", "{7ED0CE30-290A-4A0B-A1A5-DD7518C8F088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Howzit.DAL", "Howzit.DAL\Howzit.DAL.csproj", "{6FAB3E3A-F05D-4278-B29E-3849A438C8D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Howzit.API", "Howzit.API\Howzit.API.csproj", "{3AECC81E-3424-4DCB-B250-1CACAD72D2EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Howzit.API.Tests", "Howzit.API.Tests\Howzit.API.Tests.csproj", "{6E91F79A-4C47-4E1B-BA95-3110F3B806F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ED0CE30-290A-4A0B-A1A5-DD7518C8F088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED0CE30-290A-4A0B-A1A5-DD7518C8F088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED0CE30-290A-4A0B-A1A5-DD7518C8F088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED0CE30-290A-4A0B-A1A5-DD7518C8F088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FAB3E3A-F05D-4278-B29E-3849A438C8D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FAB3E3A-F05D-4278-B29E-3849A438C8D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FAB3E3A-F05D-4278-B29E-3849A438C8D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAB3E3A-F05D-4278-B29E-3849A438C8D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AECC81E-3424-4DCB-B250-1CACAD72D2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AECC81E-3424-4DCB-B250-1CACAD72D2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AECC81E-3424-4DCB-B250-1CACAD72D2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AECC81E-3424-4DCB-B250-1CACAD72D2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E91F79A-4C47-4E1B-BA95-3110F3B806F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E91F79A-4C47-4E1B-BA95-3110F3B806F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E91F79A-4C47-4E1B-BA95-3110F3B806F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E91F79A-4C47-4E1B-BA95-3110F3B806F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

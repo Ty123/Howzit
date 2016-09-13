@@ -1,0 +1,311 @@
+****************************** 
+********* customer ***********
+******************************
+
+{
+    "Name":"Naga World Group",
+    "CompanyName":"Naga World Group Ltd",
+    "Website":"www.nagaworldgroup.com"
+}
+
+{
+    "Name":"New League Casino",
+    "CompanyName":"New League Casino Inc",
+    "Website":"www.newleaguecasino.com"
+}
+
+****************************** 
+********* contacts ***********
+******************************
+[
+{
+    "FirstName":"John",
+    "LastName":"Carter",
+    "MiddleName":"Jr",
+    "Initial":"Mr",
+    "Position":"CEO",
+    "Phone":"12-345-678",
+    "Email":"john.carter@nagaworldltd.com",
+    "IsPrimary": true,
+	"CustomerId":1
+},
+
+{
+    "FirstName":"Suzan",
+    "LastName":"Calvin",
+    "MiddleName":"Elezabeth",
+    "Initial":"Mr",
+    "Position":"CFE",
+    "Phone":"12-345-678",
+    "Email":"suzan.e-calvin@nagaworldltd.com",
+    "IsPrimary": false,
+	"CustomerId":1
+},
+
+{
+    "FirstName":"Lawrence",
+    "LastName":"Robertson",
+    "MiddleName":"Jr",
+    "Initial":"Mr",
+    "Position":"Senior CEO",
+    "Phone":"12-345-678",
+    "Email":"lawrence.robertson@nagaworldltd.com",
+    "IsPrimary": false,
+    "CustomerId": 1
+},
+
+{
+    "FirstName":"Alfred",
+    "LastName":"Lanning",
+    "MiddleName":null,
+    "Initial":"Dr",
+    "Position":"Senior COT",
+    "Phone":"12-345-678",
+    "Email":"lawrence.robertson@nagaworldltd.com",
+    "IsPrimary": false,
+    "CustomerId": 1
+}
+]
+
+****************************** 
+*********   users  ***********
+******************************
+
+{
+    "Email":"user1@example.com",
+    "Password":"User@123456",
+    "ConfirmPassword":"User@123456"
+}
+
+{
+    "Email":"user2@example.com",
+    "Password":"User@123456",
+    "ConfirmPassword":"User@123456"
+}
+
+{
+    "Email":"user3@example.com",
+    "Password":"User@123456",
+    "ConfirmPassword":"User@123456"
+}
+
+{
+    "Email":"user4@example.com",
+    "Password":"User@123456",
+    "ConfirmPassword":"User@123456"
+}
+
+
+****************************** 
+******  user contacts ********
+******************************
+
+[{
+    "FirstName":"Alfred",
+    "LastName":"Lanning",
+    "MiddleName":null,
+    "Initial":"Dr",
+    "Position":"Senior COT",
+    "Phone":"12-345-678",
+    "Email":"lawrence.robertson@nagaworldltd.com",
+    "IsPrimary": false,
+    "UserId": 1,
+	"Relationship":"Close-Friend"
+},
+{
+    "FirstName":"Suzan",
+    "LastName":"Calvin",
+    "MiddleName":"Elezabeth",
+    "Initial":"Mr",
+    "Relationship":"Sibbling",
+    "Phone":"12-345-678",
+    "Email":"suzan.e-calvin@nagaworldltd.com",
+    "IsPrimary": true,
+	"UserId":1,
+	"Relationship":"Spouse"
+}]
+
+****************************** 
+***** edit user contacts *****
+******************************
+
+{
+    "Id":2,
+    "FirstName":"Lawrence",
+    "LastName":"Robertson",
+    "MiddleName":"Jr",
+    "Initial":"Mr",
+    "Position":"Senior CEO",
+    "Phone":"12-345-678",
+    "Email":"lawrence.robertson@nagaworldltd.com",
+    "IsPrimary": false,
+    "UserId": 1,
+    "Relationship":"Close-Friend"
+}
+
+****************************** 
+******  user profile  ********
+******************************
+
+{
+    "FirstName":"John",
+    "LastName":"Carter",
+    "MiddleName":"Jr",
+    "Initial":"Mr",
+    "Phone":"12-345-678",
+ 	"UserId":1,
+ 	"Relationship":"Partner",
+ 	"Email":"john.carter@gmail.com",
+ 	"Gender":"Male",
+ 	"Address":"12 Great Road Auckland, New Zealand"
+}
+
+****************************** 
+********* projects ***********
+******************************
+
+{
+    "Name":"Project Management Application Back-end",
+    "Description":"This is the first step in creating my application. It will involve in designing, creating, test all features--database, domains, DAL and API Layer of the applications",
+    "CustomerId":1,
+    "ManagerId":3
+}
+
+{
+    "Name":"Project Management Application User Management Controller",
+    "Description":"This is the step involves in creating users profile(UserContact table), user roles, add social media logins and two ways authentication. It will involve in designing, creating, test all features--database, domains, DAL and API Layer of the applications",
+    "CustomerId":1,
+    "ManagerId":3
+}
+
+****************************** 
+*********   tasks  ***********
+******************************
+{
+    "Summary":"Create AccountController",
+    "Description":"This is the process of creating CRUD functions for user sign up",
+    "State":0,
+    "Progress": 0,
+    "ProjectId":1,
+    "Priortity":5,
+    "Start":"2016-09-12",
+    "End":"2016-09-17",
+    "OwnerId":3
+}
+
+{
+    "Id": 2,
+    "Summary":"Create Task Controller",
+    "Description":"This is the process of creating CRUD function and the sub-function such as assign tasks",
+    "State":0,
+    "Progress": 0,
+    "ProjectId":2,
+    "Priortity":5,
+    "DateStart":"12-09-2016",
+    "DateEnd":"19-09-2016",
+    "OwnerId":3
+}
+
+
+****************************** 
+******* assign tasks *********
+******************************
+[
+	{
+		"UserId":1
+	},
+	{
+		"UserId":2
+	},
+	{
+		"UserId":3
+	}
+]
+
+****************************** 
+****** Reassign tasks ********
+******************************
+
+{
+	"TaskId":2,
+	"OldAssigneeId":5,
+	"NewAssigneeId":3
+}
+
+****************************** 
+***** comments/issues  *******
+******************************
+{
+	"Message":"There are numbers of unknown factors in involving the task",
+	"TaskId": 1,
+	"UserId": 3
+}
+
+{
+	"Message":"There are numbers of unknown factors in involving the task",
+	"TaskId": 1,
+	"UserId": 2
+}
+
+{
+	"Message":"There are numbers of unknown factors in involving the task",
+	"TaskId": 1,
+	"UserId": 4
+}
+
+****************************** 
+********** tools *************
+******************************
+
+{
+    "name":"Painting Brush",
+    "cost":23.00,
+    "purchased": "2016-04-08",
+    "estimateDecommision": "2016-04-20",
+    "actualDecommision": "2016-04-22",
+    "maintenanceId": 1,
+    "supplierId":1
+}
+
+
+****************************** 
+***** tools assignment *******
+******************************
+{
+    "toolId":1,
+    "userId": 1,
+    "dateFrom": "2016-08-20",
+    "dateTo": "2016-08-22"
+}
+
+****************************** 
+******* user profile *********
+******************************
+
+{
+	"UserId": 1,
+    "FirstName":"Alexander",
+    "LastName":"Balmin",
+    "MiddleName":null,
+    "Initial":"Mr",
+    "Phone":"12-345-678",
+ 	"Gender":"Male",
+ 	"Address":"12 Great Road Auckland, New Zealand"
+}
+
+{
+	"UserId": 2,
+    "FirstName":"Ronak",
+    "LastName":"Hawkinson",
+    "MiddleName":null,
+    "Initial":"Mr",
+    "Phone":"12-345-678",
+ 	"Gender":"Male",
+ 	"Address":"12 Great Road Auckland, New Zealand"
+}
+
+****************************** 
+*********  tokens  ***********
+******************************
+jINj3qzajixXBHP4EwkaoweIB4Yxqd-ddCWWHImA6B4HNsx2e46QOtxie7Nqff7Cswuk2Zg2PfjeN28pxgYQmlcXVBoG9vv3-ODcjps7tJB3aJL61g43uyTQCzkteD8UQQusoU3QNOjjsHQQGM6ggFXH2DTW7kCS6WRoZ2d-Q2UTAzqsIAZITCdu8usRfq1zWc6D2xNe5GdcLb6CvFJKK03lAZageCHTlXqwkk5duK73O0DFRo1e-ycYwwW9KWUAZ5ZAvejFrpH683_4fSnhAn6hvHh-9jMamWEPWpWaEL6FTUjEnq1zBi5I0ODDd-OenhJqSILIkyxKjuIX7BAiAHcBhv803EYYVOl1-tUvkz1qoTDXT11zxWH4Mb0JELXhkptfoMoWt6fmR6uh7vuwodd4YDazHhR0GIW4BJxS-kyypps7E8XInNXmi1M9e5k73F3_5LRkezRt75gCRv70EGjZvvUZMKRU6mZeUeHkI8Q
+EtWOx-4O2tbAhlpmcV-s5m5NlXLUNaWcGWgmPDB9Yuu5lOfhn-zIzPFOdLjqDX6bonY6qdziF-z6s-HVs3b7asQ5Hrnib-xPpnIy5Tf2PnSegryMpAdW4PZJ9cgbfu2J3ptS5KXJRnsD3VzLAH0BSbXXnOr-qrdKAKRp0nv2gm-GuIjA0GJ9vBXwl209kuCToxMlqqXJb0s4bA4tU8nEtc9kXdDjrh8rILyh5Zl3RbVn2tMht0_c05QRkRmLDdCSfqD48WoWGZ0H87BJROLn85CBjRtt0d_S4hgg1y0e-33NHQiN-JDhNLvgFTuDYi-G1PlsNCrlvrq2J015T3ayN1BVZqmWZxyXxmbnc2MlRMEo_kW8ud03xC_4f12m13osCTn4vXC9S3pugsHRn2vojFz3JjA1RO6ktsN23-ZNGczcUQ0JhYiGb5PhLXjnuSM5CnzjmOXGwlubozqus_0gSxkBjRb9kZVAsmbQ831ILL0

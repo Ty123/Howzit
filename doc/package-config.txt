@@ -1,0 +1,23 @@
+******************************* 
+*** Package configurations ****
+*******************************
+
+******** Howzit.Domains *******
+===============================
+install-package EntityFramework
+install-package Microsoft.AspNet.Identity.EntityFramework
+install-package Microsoft.AspNet.Identity.Owin
+
+**** Howzit.DataAccessLay *****
+===============================
+install-package EntityFramework
+install-package Microsoft.AspNet.Identity.EntityFramework
+install-package Microsoft.AspNet.Identity.Owin
+install-package Microsoft.Owin.Host.SystemWeb
+install-package Ninject
+
+
+******** Howzit.API **********
+==============================
+install-package Ninject.Web.WebApi
+install-package Ninject.Web.WebApi.WebHost
